@@ -1,3 +1,7 @@
 main
 *.o
+*.so
+
 .DS_Store
+pybind11
+build

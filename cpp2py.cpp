@@ -9,7 +9,7 @@ PYBIND11_MODULE(LNMM, m)
 {
     py::class_<LNMM>(m, "LNMM")
         .def(py::init<double, double, int, int, double, bool>())
-        .def("Fit", &LNMM::Fit)
+        .def("fit", &LNMM::fit)
         .def("get_beta", &LNMM::get_beta)
-        .def("get_sigma", &LNMM::get_sigma)
+        .def("get_sigma", &LNMM::get_sigma);
 }
