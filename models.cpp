@@ -113,3 +113,13 @@ void LNMM::fit(vector<vector<double>> x, vector<vector<double>> y)
 
     printf("Final result -> beta = %.3f, sigma = %.3f\n", beta, sigma);
 }
+
+double LNMM::get_beta(void)
+{
+    return beta;
+}
+
+double LNMM::get_sigma(void)
+{
+    return sigma;
+}

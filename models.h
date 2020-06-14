@@ -24,6 +24,9 @@ public:
          int max_iter = 50, double eps = 1.0e-5, bool verbose = true);
 
     void fit(vector<vector<double>> x, vector<vector<double>> y);
+
+    double get_beta(void);
+    double get_sigma(void);
 };
 
 #endif
