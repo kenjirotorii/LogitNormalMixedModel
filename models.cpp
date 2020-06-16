@@ -136,3 +136,8 @@ vector<double> LNMM::get_sigma_trace(void)
 {
     return sigma_trace;
 }
+
+vector<vector<double>> LNMM::get_z_trace(void)
+{
+    return z_sample;
+}
