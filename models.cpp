@@ -16,6 +16,9 @@ LNMM::LNMM(double beta_0, double sigma_0, int sample_size, int max_iter, double 
     this->max_iter = max_iter;
     this->eps = eps;
     this->verbose = verbose;
+
+    beta_trace.assign(max_iter, 0.0e0);
+    sigma_trace.assign(max_iter, 0.0e0);
 }
 
 void LNMM::fit(vector<vector<double>> x, vector<vector<double>> y)
@@ -122,4 +125,14 @@ double LNMM::get_beta(void)
 double LNMM::get_sigma(void)
 {
     return sigma;
+}
+
+vector<double> LNMM::get_beta_trace(void)
+{
+    return beta_trace;
+}
+
+vector<double> LNMM::get_sigma_trace(void)
+{
+    return sigma_trace;
 }

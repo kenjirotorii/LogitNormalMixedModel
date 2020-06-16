@@ -17,6 +17,9 @@ public:
     double beta;
     double sigma;
 
+    vector<double> beta_trace;
+    vector<double> sigma_trace;
+
     vector<double> z;
     vector<vector<double>> z_sample;
 
@@ -27,6 +30,9 @@ public:
 
     double get_beta(void);
     double get_sigma(void);
+
+    vector<double> get_beta_trace(void);
+    vector<double> get_sigma_trace(void);
 };
 
 #endif

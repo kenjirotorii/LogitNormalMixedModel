@@ -11,5 +11,7 @@ PYBIND11_MODULE(LNMM, m)
         .def(py::init<double, double, int, int, double, bool>())
         .def("fit", &LNMM::fit)
         .def("get_beta", &LNMM::get_beta)
-        .def("get_sigma", &LNMM::get_sigma);
+        .def("get_sigma", &LNMM::get_sigma)
+        .def("get_beta_trace", &LNMM::get_beta_trace)
+        .def("get_sigma_trace", &LNMM::get_sigma_trace);
 }
