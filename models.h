@@ -33,7 +33,7 @@ public:
 
     vector<double> get_beta_trace(void);
     vector<double> get_sigma_trace(void);
-    vector<vector<double>> get_z_trace(void);
+    vector<vector<double>> get_z_sample(void);
 };
 
 #endif

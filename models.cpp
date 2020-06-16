@@ -110,6 +110,9 @@ void LNMM::fit(vector<vector<double>> x, vector<vector<double>> y)
 
         sigma = 1.0 / M * z_sum / sample_size;
 
+        beta_trace[i] = beta;
+        sigma_trace[i] = sigma;
+
         if (verbose)
             printf("[iter: %2d, beta: %.3f, sigma: %.3f]\n", i, beta, sigma);
     }
@@ -137,7 +140,7 @@ vector<double> LNMM::get_sigma_trace(void)
     return sigma_trace;
 }
 
-vector<vector<double>> LNMM::get_z_trace(void)
+vector<vector<double>> LNMM::get_z_sample(void)
 {
     return z_sample;
 }

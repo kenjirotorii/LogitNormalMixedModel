@@ -14,5 +14,5 @@ PYBIND11_MODULE(LNMM, m)
         .def("get_sigma", &LNMM::get_sigma)
         .def("get_beta_trace", &LNMM::get_beta_trace)
         .def("get_sigma_trace", &LNMM::get_sigma_trace)
-        .def("get_z_trace", &LNMM::get_z_trace);
+        .def("get_z_sample", &LNMM::get_z_sample);
 }
